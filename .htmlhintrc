@@ -7,8 +7,8 @@
   "spec-char-escape": true,
   "id-unique": true,
   "src-not-empty": true,
-  "attr-no-duplication": true,
   "title-require": true,
-  "alt-require": true,
-  "doctype-html5": true
+  "tag-self-close": true,
+  "attr-no-duplication": true,
+  "alt-require": true
 }
