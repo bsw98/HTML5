@@ -1,1 +1,25 @@
-/* CSS 스타일 */
+@import url(./normalize.css);
+@import url(./reset.css);
+
+
+body{
+  background: rgb(194, 194, 157);
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 100;
+}
+/* 쉬프트 + 알트 + 위아래 방향키 누르면 복제가 됨*/
+.header{
+  background: pink;
+}
+.visual{
+  background: chartreuse;
+}
+.main{
+  background: rgb(97, 38, 48);
+}
+.slogan{
+  background: rgb(226, 164, 173);
+}
+.footer{
+  background: rgb(205, 187, 190);
+}
