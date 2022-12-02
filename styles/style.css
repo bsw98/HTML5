@@ -18,6 +18,7 @@ body{
 }
 /* 헤더 */
 .header{
+  padding: 0 30px;
   background: pink;
   height: 15vh;
 }
@@ -35,7 +36,7 @@ body{
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 30px;
+  padding: 0 30px;
 }
 
 .group1{
