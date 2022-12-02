@@ -13,8 +13,8 @@ body{
 /* 쉬프트 + 알트 + 위아래 방향키 누르면 복제가 됨*/
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer-inner{
-    width: 940px;
-    margin:0 auto;
+  width: 940px;
+  margin:0 auto;
 }
 /* 헤더 */
 .header{
@@ -27,25 +27,19 @@ body{
   background: chartreuse;
   height: 10vh;
 }
-/* 메인 */
-.main{
+/* 메인 */c.main{
   background: rgb(97, 38, 48);
-  display: flow-root;
   height: 50vh;
-  padding: 0 15px;
+  display: flex;
 
 }
-.clearfix{
-  clear: both;
-}
-.group{
+/* .group{
   float:left;
   margin: 0 15px;
-}
+} */
 .group1{
 background-color: violet;
 width: 250px;
-float:left
 }
 .group2{
 background-color: yellow;
