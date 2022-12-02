@@ -27,16 +27,18 @@ body{
   background: chartreuse;
   height: 10vh;
 }
-/* 메인 */c.main{
-  background: rgb(97, 38, 48);
+/* 메인 */
+.main{
+  background: lightgreen;
   height: 50vh;
   display: flex;
-
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
 }
-/* .group{
-  float:left;
-  margin: 0 15px;
-} */
+
 .group1{
 background-color: violet;
 width: 250px;
@@ -48,7 +50,7 @@ width: 380px;
 }
 .group3{
   width: 190px;
-background-color: darkorchid;
+  background-color: darkorchid;
 }
 /* 슬로건 */
 .slogan{
