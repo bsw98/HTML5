@@ -13,13 +13,12 @@ body{
 /* 쉬프트 + 알트 + 위아래 방향키 누르면 복제가 됨*/
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer-inner{
-    width: 940px;
-    margin:0 auto;
+  width: 940px;
+  margin:0 auto;
 }
 /* 헤더 */
 .header{
   background: pink;
-  padding:0 30px;
   height: 15vh;
 }
 /* 비주얼 */
@@ -29,32 +28,28 @@ body{
 }
 /* 메인 */
 .main{
-  background: rgb(97, 38, 48);
-  display: flow-root;
+  background: rgb(59, 111, 160);
   height: 50vh;
-  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+}
 
-}
-.clearfix{
-  clear: both;
-}
-.group{
-  float:left;
-  margin: 0 15px;
-}
 .group1{
-background-color: violet;
-width: 250px;
-float:left
-}
-.group2{
 background-color: yellow;
 width: 380px;
 
 }
+.group2{
+  width: 250px;
+  background-color: rgb(44, 9, 62);
+}
 .group3{
   width: 190px;
-background-color: darkorchid;
+  background-color: rgb(137, 119, 146);
 }
 /* 슬로건 */
 .slogan{
