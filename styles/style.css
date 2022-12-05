@@ -8,10 +8,15 @@
 *::after {
   box-sizing: border-box;
 }
-
+/* 링크 스타일 */
+a{
+  text-decoration: none;
+  color:inherit;
+}
 /* 본문 스타일 */
 body {
-  background: #ffc;
+  color: #212121;
+  background: #ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
@@ -48,7 +53,9 @@ body {
   content: '\e804';
   
 }
-
+.member li{
+  text-transform: uppercase;
+}
 .member :nth-child(1)::before{
   content: "" ;
 } */
