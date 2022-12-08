@@ -271,24 +271,25 @@ body {
   position: relative;
   font-family: Georgia, 'Times New Roman', Times, serif;
   animation: moveEffect 400ms forwards;
-
 }
 /* 메인 */
 .main {
-  background: lightgreen;
+  background: white;
   height: 50vh;
   display: flow-root;
   padding: 0 15px;
+  border-radius: 15px;
 }
 
 .group {
-  margin: 0 15px;
+  margin: 30px 15px;
   float: left;
 }
 
 .group1 {
-  background-color: violet;
+  margin:15px 15px;
   width: 250px;
+  
 }
 .group2 {
   background-color: salmon;
@@ -298,7 +299,70 @@ body {
   background-color: gold;
   width: 190px;
 }
+.login{
+  display: block;
+  border-radius: 5px;
+  background-color:#e85e2c;
+  box-shadow: 5px 5px 5px gray;
+  padding:0px 0px 5px 0px;
+}
+.login h2{
+  color: #ff0;
+  margin:15px 15px;
+}
+.login-form,.sign{
+  padding:10px;
+  background-color: white;
+}
+.login-form::after{
+  margin-top:8px;
+  display: block;
+  content:"";
+  border-top: 1px solid gray;
+}
+legend{
+  font-size: 0;
+  clip-path:calc(0 0,0 0,0 0);
+}
+.login-form{
+  margin:15px 10px 0px 10px;
+  margin-bottom: 0;
+  position: relative;
+  display: block;
+  
+  border-radius: 5px 5px 0 0;
+}
+.sign{
+  padding-top: 0;
+  font-size: 10px;
+  justify-content: space-between;
+  display:flex;
+  margin: 0 10px 5px 10px;
+  margin-top: 0px;
+  border-radius: 0 0 5px 5px;
+  background-color:white;
+}
+.login-form label {
+  margin:4px;
+  display: inline-block;
+  width: 4em;
+}
 
+.login-form input{
+  
+  width:80px;
+}
+.login-button{
+  font-size: 12px;
+  top:12px;
+  right:10px;
+  height: 48px;
+  width: 52px;
+  position: absolute;
+  color: white;
+  border: 0;
+  background-color: #e85e2c;
+}
 /* 슬로건 */
 .slogan {
   background: skyblue;
