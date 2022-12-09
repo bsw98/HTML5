@@ -1,9 +1,11 @@
+@import url(./fonts.css);
 @import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -270,10 +272,11 @@ body {
 
 /* 메인 */
 .main {
-  background: lightgreen;
-  height: 50vh;
   display: flow-root;
-  padding: 0 15px;
+  background: #fff;
+  min-height: 450px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
 }
 
 .group {
@@ -282,17 +285,109 @@ body {
 }
 
 .group1 {
-  background-color: violet;
   width: 250px;
 }
+
 .group2 {
   background-color: salmon;
   width: 380px;
 }
+
 .group3 {
   background-color: gold;
   width: 190px;
 }
+
+/* 로그인 */
+.login {
+  box-shadow: 5px 5px 0 0 #ccc;
+  background: orange radial-gradient(circle at right top, orange, orangered);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.login-title {
+ 
+  color: #ff0;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+.login-form::after{
+  margin-top:10px;
+  display: block;
+  content: "";
+  border-top: 1px solid gray;
+}
+.login-form fieldset {
+  position: relative;
+}
+
+.login-form label {
+  
+  display: inline-block;
+  
+  width: 4em;
+}
+
+.login-form input {
+  width: 90px;
+  height: 24px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+
+}
+.login-form label,.login-form input{
+  margin-bottom:2px;
+}
+.login-button {
+  color: white;
+  background-color:#e85e2c;
+  height: 50px;
+  border-radius: 5px;
+  border:0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 0 10px 10px 10px;
+  display: flex;
+  flex-flow:row;   
+  justify-content: space-between;
+}
+.sign li{
+  margin-top: 6px;
+}
+.sign a::before{
+  content: "\e807";
+  font-family: "fontello";
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 6px;
+  color: orangered;
+  font-family:fontello;
+}
+
+
 
 /* 슬로건 */
 .slogan {
