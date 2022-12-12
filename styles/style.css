@@ -291,7 +291,7 @@ body {
 }
 
 .group2 {
-  background-color: salmon;
+  
   width: 380px;
 }
 
@@ -411,6 +411,74 @@ body {
 .validation-list a:hover,.validation-list a:focus{
   color:red;
 }
+
+/* 웹 표준 */
+.term{
+  margin-top: 20px;
+  background: gray linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+  border:1px gray solid;
+  border-radius: 5px;
+  padding:10px 15px;
+  
+}
+.term-list div{
+  display: flow-root;
+  margin-top:10px;
+}
+.term-title{
+  font-size:15px;
+  font-weight: 600;
+}
+.term-list-thumbnail{
+  vertical-align : middle;
+  float:left;
+}
+.term-list-subject,.term-list-brief{
+  float:right;
+  width: 145px;
+}
+.term-list-subject{
+  color:blue;
+}
+.cross .term-list-subject,.cross .term-list-brief{
+  float:left;
+}
+.cross .term-list-thumbnail{
+  float: right;
+}
+/* 검색 폼 */
+.search-form{
+  /* position: relative; */
+  border:1px solid gray;
+  background: grey linear-gradient(to bottom, #ccc 0%, #ccc 35%, #fff 70%, #fff 100%);
+  border-radius: 15px 15px 0 0;
+  padding:10px;
+}
+.search-form-inner{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.form-group{
+  
+ 
+}
+.form-group-input{
+  margin: 0 10px 0 10px;
+  padding:5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 210px;
+}
+.button-fill{
+  border: none;
+  display: inline-block;
+  background-color: black;
+  color:white;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+}
+
 /* 슬로건 */
 .slogan {
   background: skyblue;
