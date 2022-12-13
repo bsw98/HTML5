@@ -2,7 +2,7 @@
 @import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
-
+@import url(./module.css);
 /* 숨김 콘텐츠 */
 .a11y-hidden,
 legend {
@@ -296,7 +296,7 @@ body {
 }
 
 .group3 {
-  background-color: gold;
+  
   width: 190px;
 }
 
@@ -481,7 +481,7 @@ body {
 /* 공지사항 및 자료실 */
 .board {
   position: relative;
-  margin-top:20px
+  margin-top:20px;
 }
 
 .tab-panel{
@@ -496,30 +496,23 @@ body {
 .tab-list {
   display: flex;
 }
-#noticeButton{
-background-color: white;
-border:#e85e2c 1px solid;
-color: #ef9126;
-border-radius: 5px 5px 0 0;
-padding:5px 10px 5px 10px;
-border-bottom: 0; 
+.tab {
+  border: 1px solid #aaa;
+  background-color: #ccc;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  color: #666;
 }
-#archiveButton{
-  
-  background-color: rgb(167, 165, 165);
-border:black 1px solid;
 
-border-radius: 5px 5px 0 0;
-padding:5px 10px 5px 10px;
-
+.is-select.tab {
+  background-color: #fff;
+  color: #e85e2c;
+  border-color: currentColor currentColor #fff currentColor;
 }
 .board-list li{
   margin:10px;
   display:flex;
   justify-content: space-between;
-  /* overflow:hidden;
-  white-space:nowrap;
-  text-overflow: */
 }
 .board-list a{
    overflow:hidden;
@@ -531,6 +524,135 @@ padding:5px 10px 5px 10px;
   top:0;
   right: 0;
 }
+/* 뉴스  */
+.news{
+  margin-top:20px;
+  position: relative;
+}
+.news-link{
+  display: block;
+}
+.news-title{
+  margin-bottom: 40px;
+  color:#e85e2c;
+  font-weight: 800;
+}
+.news::before{
+  content:"";
+  position: absolute;
+  top:35px;
+  width:100%;
+  height: 2px;
+  background: #ccc linear-gradient(to left, #fff ,#ccc);
+}
+/* .news-title::after{
+  content:"";
+  display:block;
+  border-top: 1px solid gray;
+  margin: 10px 0 21px 0;
+} */
+.news-item{
+  padding-left: 130px;
+  font-weight: 500;
+  position: relative;
+}
+.news-item-title{
+  font-weight: 700;
+}
+.news-item-brief{
+  margin-top: 15px;
+}
+.news-item-thumbnail{
+  position: absolute;
+  text-align: center;
+  top:0;
+  left:0;
+}
+.news-item-thumbnail img{
+  box-shadow: #ccc 0 10px 10px 10px;
+  margin-bottom: 25px;
+}
+.icon-plus{
+  position: absolute;
+  top:0;
+  right:0;
+}
+.icon-plus::before{
+  color: hsla(110,50%,30%,1)
+}
+/* 신규 이벤트 및 관련 사이드 */
+
+.event{
+  border-bottom:1px solid #aaa;
+  position: relative;  
+}
+.event-button-wrapper{
+  overflow: hidden;
+  height: 18px;
+  top:0;
+  right: 0;
+  position: absolute;
+}
+.event-button{
+  text-indent: -9999px;
+  width: 19px;
+  height: 100%;
+  border: 0;
+  padding:0;  
+  background: url(./images/./back_forward.png) no-repeat;
+}
+.event-button:focus{
+  outline-offset: -1px;
+}
+.event-button-next{
+  background-position: -36px;
+}
+.event-thumbnail,
+.event-brief{
+  margin:10px 0;
+
+}
+.event-thumbnail img{
+  box-shadow: #ccc 5px 5px 0 0;
+}
+
+.event-brief{
+  line-height: 1.5;
+}
+
+.related{
+  margin-top:10px;
+}
+
+.related-list{
+  background-color: #fff;
+  margin-top:10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding:0 15px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 1s, padding-top 1s 0.7s;
+}
+.related-list li{
+  display: flex;
+  flex-flow:row nowrap; 
+  align-items: center;
+  margin-bottom:5px;
+  height: 25px;
+}
+.related-list a{
+  flex-grow: 1;
+}
+.related-list:hover,.related-list:focus{
+  height: 147px;
+  padding-top: 5px;
+}
+
+
+
+
+
 /* 슬로건 */
 .slogan {
   background: skyblue;
