@@ -6,5 +6,12 @@
 }
 
 .accent-color{
-  color:#ef9126;
+  font-weight: 700;
+  color:#e96a21;
+}
+.margin-top-default{
+  margin-top:20px;
+}
+.margin-top-thin{
+  margin-top:15px;
 }
